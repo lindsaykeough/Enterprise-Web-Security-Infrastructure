@@ -1,0 +1,6 @@
+# SANITIZED PORTFOLIO EXAMPLE
+Port 8888
+Timeout 600
+Allow 10.30.0.0/24
+Allow 10.40.0.0/24
+LogLevel Info

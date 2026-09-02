@@ -1,0 +1,11 @@
+# SANITIZED PORTFOLIO EXAMPLE
+<VirtualHost *:80>
+    ServerName web1.example.internal
+    DocumentRoot /var/www/example
+    <Directory /var/www/example>
+        AllowOverride None
+        Require all granted
+    </Directory>
+    ErrorLog /var/log/httpd/example-error.log
+    CustomLog /var/log/httpd/example-access.log combined
+</VirtualHost>

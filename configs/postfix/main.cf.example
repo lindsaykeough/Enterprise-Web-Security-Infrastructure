@@ -1,0 +1,12 @@
+# SANITIZED PORTFOLIO EXAMPLE
+myhostname = mail.example.net
+mydomain = example.net
+myorigin = $mydomain
+inet_interfaces = all
+inet_protocols = ipv4
+mydestination = $myhostname, localhost.$mydomain, localhost
+mynetworks = 127.0.0.0/8, 10.20.0.0/24
+relay_domains = example.net
+smtpd_tls_security_level = may
+smtp_tls_security_level = may
+# Credentials, private keys, and production hardening intentionally omitted.

@@ -1,0 +1,11 @@
+// SANITIZED PORTFOLIO EXAMPLE
+options {
+    directory "/var/named";
+    recursion no;
+    listen-on port 53 { any; };
+    allow-query { any; };
+};
+zone "example.net" IN {
+    type master;
+    file "example.net.zone";
+};

@@ -1,0 +1,18 @@
+flowchart TB
+    Internet((Internet)) --> FW[pfSense Firewall]
+    FW --> Outer[Outer DMZ]
+    FW --> Inner[Inner DMZ]
+    FW --> HQ[HQ Clients]
+    FW --> Remote[Remote Clients]
+    Outer --> DNS[BIND DNS pair]
+    Outer --> MAIL[Postfix + SpamAssassin]
+    Outer --> ADC[Relianoid ADC]
+    Inner --> DC[AD DS / DNS pair]
+    Inner --> EX[Exchange]
+    Inner --> WEB[Apache Web Pair]
+    Inner --> PROXY[Tinyproxy]
+    Inner --> CA[OpenSSL CA]
+    MAIL --> EX
+    ADC --> WEB
+    CA -. certificates .-> ADC
+    CA -. S/MIME .-> EX

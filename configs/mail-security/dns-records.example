@@ -1,0 +1,4 @@
+; SANITIZED MAIL SECURITY EXAMPLES
+example.net. IN TXT "v=spf1 mx ip4:198.51.100.25 -all"
+_dmarc.example.net. IN TXT "v=DMARC1; p=quarantine; adkim=r; aspf=r"
+mail._domainkey.example.net. IN TXT "v=DKIM1; k=rsa; p=<PUBLIC_KEY_ONLY>"
