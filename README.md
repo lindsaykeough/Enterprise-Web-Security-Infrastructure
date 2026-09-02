@@ -1,6 +1,6 @@
 # Enterprise Web & Security Infrastructure
 
-Sanitized portfolio documentation for a **Spring 2026 Purdue University CNIT 34220** team project that built a segmented multi-site enterprise environment and progressively added identity, DNS, email, web, availability, PKI, and security controls.
+Sanitized portfolio documentation for a Enterprise Web & Security Infrastructure team project that built a segmented multi-site enterprise environment and progressively added identity, DNS, email, web, availability, PKI, and security controls.
 
 > This is a public portfolio reconstruction, not a copy of the course submission. Credentials, private keys, internal infrastructure details, and complete answer configurations are intentionally excluded.
 
@@ -109,4 +109,4 @@ flowchart TB
 
 ## Academic context
 
-This was a **team-based academic implementation** completed during Spring 2026. This repository focuses on architecture, configuration patterns, validation, and troubleshooting rather than reproducing the original course instructions.
+This was a team-based project completed during Spring 2026. This repository focuses on architecture, configuration patterns, validation, and troubleshooting rather than reproducing the original course instructions.
